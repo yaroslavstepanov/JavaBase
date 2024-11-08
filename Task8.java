@@ -4,11 +4,11 @@ public class Task8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Запрос числа у пользователя с проверкой на корректность ввода
+        // Запрос числа у пользователя с проверкой
         System.out.print("Введите любое целое положительное число: ");
         while (!scanner.hasNextInt()) {
             System.out.println("Ошибка: введите корректное целое число!");
-            scanner.next(); // Очистка некорректного ввода
+            scanner.next(); // Очистка
         }
         int n = scanner.nextInt();
 
@@ -23,7 +23,6 @@ public class Task8 {
                 sum += i;
             }
 
-            // Вывод результата
             System.out.println("Сумма всех нечетных чисел от 1 до " + n + " равна: " + sum);
         }
 
